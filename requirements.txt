@@ -1,2 +1,4 @@
 PyPDF2 v3.0.1
-
+argparse v1.4.0
+sqlite3 v3.7.15 or newer
+urllib, pytest , re libraries are available in python
