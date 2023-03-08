@@ -31,7 +31,7 @@ def extractIncidents(path):
             ,lambda x: f'!{x.group(1)}',
             text)
     
-    # To bring multiple lines address on same line
+    # To bring multiple lines address/Location on same line
     text = re.sub(
             r'([\w,\.;#\'<>&\(\) /-]*) \n([\w,\.;#\'<>&\(\) /-]*)',
             lambda x: f'{x.group(1)} {x.group(2)}',

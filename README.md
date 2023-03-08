@@ -58,10 +58,13 @@ The above code will create an empty database with a table with 5 columns, column
 ```python
 status.status('incidents.db')
 ```
-Using status method to print all the values in the nature field with their count
-Assumptions:
-1. Nature of Incidents field contains values which are of type Start Case, Title Case, camelCase, sentence case etc. Incidents fields does not start with ALL CAPS word.
+Using status method to print all the values in the nature field with their count. Using **Select** and **Groupby** command to get the count of the incidents.
 
-Bugs:   
-1. If the Nature of Incident field starts with a word in ALL CAPS, then the word will be concatenated to th Address field.
+
+### Assumptions:
+1. Nature of Incidents field contains values which are of type Start Case, Title Case, camelCase, sentence case etc. Incidents fields does not start with ALL CAPS word.
+2. The Location field is a single line field.
+
+### Bugs:   
+1. If the Nature of Incident field starts with a word in ALL CAPS, then the word will be concatenated to the Address field.
    
