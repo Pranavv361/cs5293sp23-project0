@@ -1,4 +1,3 @@
-# cs5293sp23-project0
 # Author - Pranav Vichare
 # Project - Norman Police Department Incident Summary
 # About
