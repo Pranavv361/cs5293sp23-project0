@@ -54,7 +54,11 @@ The above function will extract the text using regular expression Library and st
 createDb.createDb()
 populateDb.populateDb('incidents.db', incidents)
 ```
-The above code will create 
+The above code will create an empty database with a table with 5 columns, column for each field and then populate the extract from pdf to the database.
+```python
+status.status('incidents.db')
+```
+Using status method to print all the values in the nature field with their count
 Assumptions:
 1. Nature of Incidents field contains values which are of type Start Case, Title Case, camelCase, sentence case etc. Incidents fields does not start with ALL CAPS word.
 
