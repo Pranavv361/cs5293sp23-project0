@@ -1,6 +1,6 @@
 ## Author - Pranav Vichare
 ## Project - Norman Police Department Incident Summary
-**About:**  In this project, we access Norman Police Department Database online and download the files which contains summary of Incidents in the form of PDF file. We then extract the text from the pdf and ingest all the records in the database by creating a table which will store all 5 fields in the database - Data/Time, Incident No, Location, Nature, Incident ORI
+**About:**  In this project, we access Norman Police Department Database online and download the files which contains summary of Incidents in the form of PDF file. We then extract the text from the pdf and ingest all the records in the database by creating a table which will store all 5 fields in the database (Data/Time, Incident No, Location, Nature, Incident ORI)
 
 ```python
 import argparse
@@ -44,12 +44,12 @@ The main function mentioned above will be executed and calls other functions. Th
 ```python
 fetchIncidents.fetchIncidents(url)
 ```
-The url will be sent to **fetchIncidents.fetchIncidents(url)** fetchIncidents function in fetchIncidents.py file which we download the pdf file using urllib library.
+The url will be sent to **fetchIncidents.fetchIncidents(url)** fetchIncidents function in fetchIncidents.py file which downloads the pdf file using urllib library.
 The download file *incidents.pdf* is then stored in the local directory.
 ```python
 extractIncidents.extractIncidents('incidents.pdf')
 ```
-The above function will extract the text using regular expression Library and store it in form a list of tuples which has all the 5 fields to required.
+The above function will extract the text using regular expression library and store it in form a list of tuples which has all the 5 fields which are required.
 ```python
 createDb.createDb()
 populateDb.populateDb('incidents.db', incidents)
